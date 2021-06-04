@@ -38,7 +38,7 @@ class Quiz {
     Contestant.getPlayerInfo();
     if (allContestants !== undefined) {
       debugger;
-      var display_Answers = 230;
+      var displayAnswer = 230;
       fill("Blue");
       textSize(20);
       text("*NOTE: Contestant who answered correct are highlighted in green color!", 130, 230);
@@ -51,9 +51,9 @@ class Quiz {
         else
           fill("red");
 
-        display_Answers += 30;
-        textSize(20);
-        text(allContestants[plr].name + ": " + allContestants[plr].answer, 250, display_Answers)
+        displayAnswer += 30;
+        textSize(25);
+        text(allContestants[plr].name + ": " + allContestants[plr].answer, 250, display_Answer)
       }
     }
   }
